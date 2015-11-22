@@ -1,4 +1,4 @@
-number = raw_input("Enter a number: ")
+number = int(raw_input("Enter a number: "))
 
 divisible = []
 divisible_and_prime = []
@@ -7,10 +7,10 @@ divisible_and_prime = []
 def divisible_by_all_numbers():
 	for i in range(2,number):
 		if number%i==0:
-			divisible.append(number)
-
+			divisible.append( number )
+			
 length_divisible = len(divisible)
-
+print divisible
 
 def check_if_prime():
 	for j in range(2,length_divisible):
@@ -26,8 +26,3 @@ def main():
 	print 'Prime factors of {0} are {1}'.format(number, divisible_and_prime)
 
 main()
-
-
-
-	
-
